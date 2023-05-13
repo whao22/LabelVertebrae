@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=LabelVertebrae
+Comment=Image Polygonal Annotation with Python based on labelme
+Exec=LabelVertebrae
+Icon=LabelVertebrae
+Terminal=false
+Type=Application
+Categories=Graphics;RasterGraphics;

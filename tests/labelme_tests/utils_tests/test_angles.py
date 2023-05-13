@@ -1,0 +1,12 @@
+from labelme.utils.angles import cal_angles
+from qtpy.QtCore import QPointF
+
+def test_cal_angles():
+    p0=[QPointF(9.378378378378379, 24.324324324324326), QPointF(162.0810810810811, 20.945945945945947)]
+    p1=[ QPointF(9.378378378378379, 55.4054054054054),  QPointF(161.40540540540542, 53.37837837837838)]
+    p2=[ QPointF(159.3783783783784, 66.89189189189189),  QPointF(165.45945945945945, 252.7027027027027)]
+    p3=[ QPointF(22.891891891891888, 227.02702702702703),  QPointF(151.94594594594594, 72.29729729729729)]
+
+    lines=[p0,p1,p2,p3]
+    angles=cal_angles(lines)
+    print(angles)
